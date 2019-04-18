@@ -1,0 +1,5 @@
+.video-player-container {
+  display: grid;
+  grid-template-columns: 100%;
+  justify-self: center;
+}

@@ -1,0 +1,17 @@
+.video-name {
+  display:grid;
+  align-items: center;
+  height:2.5em;
+  text-align: center;
+  line-height: 2em;
+}
+
+.add-video-form {
+  position: absolute;
+  top:0;
+  left: 15em;
+  -webkit-box-shadow:5px 5px 5px -2px #ccc;
+  -moz-box-shadow: 5px 5px 5px -2px #ccc;
+  box-shadow: 5px 5px 5px -2px #ccc;
+  z-index: 2;
+}

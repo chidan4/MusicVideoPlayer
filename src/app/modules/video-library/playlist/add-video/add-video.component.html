@@ -1,0 +1,27 @@
+<div class="video-name" (click)="addVideoToCurrentPlaylist()">
+  <i class="fas fa-plus-circle icon"></i>
+  Add Video
+</div>
+
+<div *ngIf="showAddVideoForm" class="add-video-form">
+  <form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <div formGroupName="playList">
+      <input
+        type="text"
+        placeholder="Artist Name"
+        formControlName="artist" >
+      <input
+        type="text"
+        placeholder="Video Title"
+        formControlName="title">
+      <input
+        type="text"
+        placeholder="Url of Video"
+        formControlName="url">
+    </div>
+    <div>
+      <button type="submit" [disabled]="form.invalid">Add Video</button>
+      <button type="button" (click)="showAddVideoForm = false">Cancel</button>
+    </div>
+  </form>
+</div>

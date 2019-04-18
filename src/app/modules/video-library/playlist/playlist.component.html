@@ -1,0 +1,21 @@
+<div class="main-playlist">
+  <div class="playlist-items-container">
+    <div *ngFor="let list of listOfPlaylist" class="list-name"
+         [ngClass]="(list.id === selectedPlaylistId) ? 'selected-playlist':''"
+         (click)="selectedPlaylistId !== list.id && showVideoFromPlayList(list.id)">
+      {{list.name}}</div>
+    <app-generate-playlist (playListAdded)="updatePlayList()"></app-generate-playlist>
+  </div>
+  <div class="video-items-container">
+    <div class="video-list-container">
+      <app-add-video [currentPlaylist]="playList"></app-add-video>
+      <div *ngFor="let video of playList[0]?.list; let videoIndex = index" class="video-name tooltip" (click)="playSelectedVideo(video.url, videoIndex)">
+        <i class="fas fa-play-circle icon"></i>
+        {{video?.title}}
+        <span class="tooltiptext">{{video.artist}}</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+

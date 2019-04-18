@@ -1,0 +1,80 @@
+/* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: "Roboto-Bold";
+  src: url("assets/fonts/Roboto-Bold.ttf");
+}
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url("assets/fonts/Roboto-Regular.ttf");
+}
+
+body{
+  font-family: Roboto-Regular;
+  margin: 0;
+  font-size: 16px;
+}
+
+video {
+  margin: auto;
+  height: 24em;
+  width: 43em;
+}
+
+input , button {
+  height:2em ;
+  cursor: pointer;
+  border:none;
+  border-bottom: 1px solid #dedede;
+  width:100%;
+}
+button{
+  background: cadetblue;
+  color:#fff;
+  font-weight: bold;
+}
+button:disabled {
+  pointer-events: none;
+}
+.video-app-button {
+  position: absolute;
+  right:1em;
+  bottom: 0;
+  background: transparent;
+}
+
+.icon {
+  color: cadetblue;
+  font-size: 1.5em;
+  cursor: pointer ;
+}
+@media (min-width: 1281px) {
+
+  .tooltip {
+    position: relative;
+    display: inline-block;
+  }
+
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px;
+    font-size: 1em;
+    background-color: #71a09f;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 3px 0;
+    opacity: 0;
+    transition: opacity 1s;
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+  }
+
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
+}

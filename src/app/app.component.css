@@ -1,0 +1,26 @@
+.app-container, .player-container {
+  display: grid;
+  grid-template-columns: 100%;
+  margin-bottom: 2em;
+}
+
+.playlist-container {
+  margin: auto;
+}
+
+.app-header {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-auto-rows: 2em;
+  align-items: center;
+  padding-left: 1em;
+  color: white;
+  background: cadetblue;
+  font-size: 24px;
+}
+
+@media screen and (max-width: 769px) {
+  video {
+    width: 100%;
+  }
+}

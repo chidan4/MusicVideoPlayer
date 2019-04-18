@@ -1,0 +1,10 @@
+.create-playlist-input {
+  width: 75%;
+  border: none;
+  border-bottom: 1px solid #dedede;
+}
+.fa-plus-custom {
+  position: absolute;
+  top: 0.1em;
+  right: 1.8em;
+}

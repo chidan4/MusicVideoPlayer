@@ -1,0 +1,50 @@
+.playlist-items-container {
+  border-right:1px solid #dedede;
+}
+
+.video-items-container {
+  display: grid;
+  grid-template-columns: 100%;
+  padding: 1em;
+}
+.video-list-container {
+  display: grid;
+  grid-template-columns: 1.5fr 1.5fr 1.5fr 1.5fr 1fr;
+  grid-template-rows: 4em;
+}
+.video-name {
+  display:grid;
+  align-items: center;
+  height:2.5em;
+  text-align: center;
+  line-height: 2em;
+}
+
+.main-playlist {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  position: relative;
+  height:17em;
+}
+
+app-generate-playlist {
+  position: absolute;
+  bottom: 0;
+}
+
+.list-name {
+  border-bottom: 1px solid #dedede;
+  text-align: center;
+  padding: 0.5em;
+  cursor: pointer;
+}
+
+.list-name:hover {
+  background-color: #dedede;
+  transition: ease-in 200ms;
+}
+
+.selected-playlist {
+  background: cadetblue;
+  color:#FFF;
+}
